@@ -66,17 +66,17 @@ const WhyChooseUs = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <div className="inline-flex gap-8 p-6 bg-blue-50 rounded-xl">
+          <div className="block md:inline-flex gap-8 p-6 bg-blue-50 rounded-xl">
             <div>
               <p className="text-3xl font-bold text-blue-600">50,000+</p>
               <p className="text-gray-600">Experiences</p>
             </div>
-            <div className="border-l border-blue-200"></div>
+            <div className="border-2 border-blue-200 my-2"></div>
             <div>
               <p className="text-3xl font-bold text-blue-600">100,000+</p>
               <p className="text-gray-600">Monthly Bookings</p>
             </div>
-            <div className="border-l border-blue-200"></div>
+            <div className="border-2 border-blue-200 my-2"></div>
             <div>
               <p className="text-3xl font-bold text-blue-600">4.8/5</p>
               <p className="text-gray-600">Average Rating</p>
