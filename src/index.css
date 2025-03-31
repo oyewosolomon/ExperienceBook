@@ -24,6 +24,8 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 222 89% 51%;
     --radius: 0.75rem;
+    --font-inter: 'Inter', sans-serif;
+    --font-sans: system-ui, sans-serif; /* Native fallback */
   }
 
   .dark {
@@ -46,11 +48,31 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 224.3 76.3% 48%;
+    --font-inter: 'Inter', sans-serif;
+    --font-sans: system-ui, sans-serif; /* Native fallback */
   }
 
   * {
     @apply border-border;
   }
+    /* Apply Inter to all text */
+    body {
+      font-family: var(--font-inter), var(--font-sans);
+      @apply font-normal;
+      font-feature-settings: 'cv05' 1; /* Enables alternate 4 */
+    }
+  
+    /* Optimized heading weights */
+    h1, h2, h3 {
+      font-family: var(--font-inter), var(--font-sans);
+      @apply font-semibold; /* 600 weight */
+      letter-spacing: -0.025em;
+    }
+  
+    /* Better number rendering */
+    .tabular-nums {
+      font-variant-numeric: tabular-nums;
+    }
   body {
     @apply bg-background text-foreground;
   }
